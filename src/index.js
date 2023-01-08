@@ -119,6 +119,8 @@ class RBSheet extends Component {
           style={[styles.wrapper, customStyles.wrapper]}
         >
           <TouchableOpacity
+            accessibilityElementsHidden={true}
+            importantForAccessibility="no"
             style={styles.mask}
             activeOpacity={1}
             onPress={() => (closeOnPressMask ? this.close() : null)}
